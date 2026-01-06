@@ -3,49 +3,74 @@
 # =========================
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
+*$py.class
+
+# =========================
+# Ambientes virtuais
+# =========================
+venv/
+env/
+.venv/
+ENV/
+virtualenv/
+
+# =========================
+# Distribuição / build
+# =========================
+build/
+dist/
 *.egg-info/
 .eggs/
-.env
-.venv
-venv/
+pip-wheel-metadata/
 
 # =========================
-# Ultralytics / YOLO
+# Logs
 # =========================
-runs/
-datasets/
-weights/
-*.pt
+*.log
 
 # =========================
-# Jupyter
+# Testes
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# =========================
+# Jupyter Notebook
 # =========================
 .ipynb_checkpoints/
 
 # =========================
-# Logs / Cache
-# =========================
-*.log
-.cache/
-ultralytics/
-~/.cache/
-
-# =========================
-# VS Code
+# IDEs e editores
 # =========================
 .vscode/
+.idea/
+*.swp
+*.swo
 
 # =========================
-# OS
+# Sistema operacional
 # =========================
 .DS_Store
 Thumbs.db
 
 # =========================
-# Build
+# Variáveis de ambiente
 # =========================
-build/
-dist/
-git rm -r --cached runs venv *.pt
+.env
+.env.*
+
+# =========================
+# Banco de dados (se usar SQLite)
+# =========================
+*.sqlite3
+*.db
+
+# =========================
+# Flask / Django
+# =========================
+instance/
+*.pid
+*.sock
