@@ -3,7 +3,7 @@ import cv2
 eye = cv2.CascadeClassifier("haarcascades/haarcascade_eye.xml")
 face = cv2.CascadeClassifier("haarcascades/haarcascade_frontalface_default.xml")
 
-imagem = cv2.imread('dataset/img.png')
+imagem = cv2.imread('dataset/360_F_484873483_hg1ofIdXbMha5lKEDG3hJBrwKh1oikTq.jpg')
 
 imagemTransmuted = cv2.cvtColor(imagem, cv2.COLOR_BGR2GRAY)
 
